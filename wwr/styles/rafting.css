@@ -54,7 +54,7 @@ article {
 }
 
 /* Social media icons (remove underline) */
-.socialmedia a {
+.socialmedia {
   text-decoration: none;
   display: block;
   align-items: center;
