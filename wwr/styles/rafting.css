@@ -1,14 +1,19 @@
 :root {
-  --primary-color: #055a05;       /* forest green */
-  --secondary-color: #f4a261;     /* warm sand */
-  --accent1-color: #264653;       /* dark slate blue */
-  --accent2-color: #e9c46a;       /* golden yellow */
-  --heading-font: "Times New Roman", Georgia, serif; 
+  --primary-color: #055a05;
+  /* forest green */
+  --secondary-color: #f4a261;
+  /* warm sand */
+  --accent1-color: #264653;
+  /* dark slate blue */
+  --accent2-color: #e9c46a;
+  /* golden yellow */
+  --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
+
 header {
- background-color: var(--primary-color);
- color: var(--accent2-color);   
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
 
 /* Reset box model */
@@ -25,19 +30,25 @@ body {
 }
 
 /* Page width and centering */
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
 /* Headings */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
 /* Consistent spacing */
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -45,6 +56,12 @@ nav, p, section, article {
 /* Social media icons (remove underline) */
 .socialmedia a {
   text-decoration: none;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: o;
+  margin: 15px 0;
 }
 
 /* Hero section */
@@ -67,7 +84,8 @@ nav, p, section, article {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text for contrast */
+  color: #fff;
+  /* white text for contrast */
 }
 
 /* Overlay article */
@@ -75,7 +93,7 @@ nav, p, section, article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 12px;
   max-width: 400px;
 }
@@ -86,5 +104,5 @@ nav, p, section, article {
   width: 125px;
   margin-left: 10px;
   border: 2px solid var(--secondary-color);
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
