@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <h1>HTML & CSS Fundamentals Quiz</h1>
+
+    <form>
+        <!-- Question 1: Text input -->
+        <label for="q1">1. What does HTML stand for?</label>
+        <input type="text" id="q1" name="q1">
+
+        <!-- Question 2: Textarea -->
+        <label for="q2">2. Briefly explain the difference between inline and block elements:</label>
+        <textarea id="q2" name="q2" rows="4" cols="40"></textarea>
+
+        <!-- Question 3: Select dropdown -->
+        <label for="q3">3. Which CSS property is used to change text color?</label>
+        <select id="q3" name="q3">
+            <option value="" selected disabled>Choose One ...</option>
+            <option value="font-size">font-size</option>
+            <option value="color">color</option>
+            <option value="background-color">background-color</option>
+        </select>
+
+        <!-- Question 4: Number input -->
+        <label for="q4">4. How many heading levels does HTML provide (h1–h?)</label>
+        <input type="number" id="q4" name="q4" min="1" max="10">
+
+        <!-- Submit button -->
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+
+</html>
