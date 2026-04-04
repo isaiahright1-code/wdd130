@@ -1,0 +1,102 @@
+/* styles.css - Colorful White Water Rafting Theme */
+
+:root {
+  --primary: #1e88e5;
+  /* Bright blue - water */
+  --secondary: #26c6da;
+  /* Turquoise */
+  --accent: #ff9800;
+  /* Energetic orange */
+  --dark: #263238;
+  --light: #f1f8ff;
+  --green: #4caf50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://via.placeholder.com/1200x400/1e88e5/ffffff?text=White+Water+Rafting') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  background: var(--dark);
+  color: white;
+  text-align: end;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer img {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social span {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

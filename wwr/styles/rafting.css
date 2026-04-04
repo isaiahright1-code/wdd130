@@ -11,6 +11,19 @@
   --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* Reset box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body text */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
@@ -35,21 +48,8 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #f8f6f6;
   font-weight: bold;
-}
-
-/* Reset box model */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body text */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
 }
 
 /* Page width and centering */
@@ -60,14 +60,16 @@ footer {
   margin: 0 auto;
 }
 
-footer img {
-  width: 80px;
-  display: flex;
+footer {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: o;
-  margin: 15px 0;
+  background-color: #3f3f3f;
+  color: #fff;
+}
+
+footer img {
+  width: 60px;
 }
 
 /* Headings */
@@ -133,4 +135,119 @@ article {
   margin-left: 10px;
   border: 2px solid var(--secondary-color);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Grid */
+.contact-grid {
+  max-width: 1200px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.contact-info {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+
+.company-details {
+  padding: 1.5rem;
+}
+
+.company-details h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Form */
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin: 1.2rem 0 0.5rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.radio-group label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  background: linear-gradient(to right, var(--accent), #f57c00);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Team Section */
+.team {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.team h2 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
