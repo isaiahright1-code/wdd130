@@ -79,6 +79,10 @@ h2 {
   color: var(--primary-color);
 }
 
+img {
+  width: 100%;
+}
+
 /* Consistent spacing */
 nav,
 p,
@@ -135,6 +139,23 @@ article {
   margin-left: 10px;
   border: 2px solid var(--secondary-color);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.history {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 3rem;
+}
+
+.history h2,
+.adventures h2 {
+  grid-column: 1/-1;
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
 }
 
 /* Contact Grid */
