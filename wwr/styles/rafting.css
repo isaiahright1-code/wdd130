@@ -272,3 +272,105 @@ article {
   border-radius: 50%;
   margin-bottom: 1rem;
 }
+
+/* General Reset */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+}
+
+/* Newsletter */
+.newsletter {
+  padding: 2rem;
+  background: #977c4e;
+  color: ghostwhite;
+}
+
+.newsletter form {
+  display: flex;
+  grid-template-columns: max-content;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.newsletter input,
+.newsletter button {
+  padding: 0.5rem;
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta .btn {
+  color: rgb(233, 236, 238);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  padding-top: 5px;
+  background-color: #977c4e;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Trips Grid */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.trips-grid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Trips Table */
+.trips-table {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: var(--accent2-color);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  background: #41607e;
+  color: white;
+}
